@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>能源管理系统</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/easyui.css" />
+		<link rel="stylesheet" type="text/css" href="css/icon.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-ui-1.10.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/easyui-lang-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.mCustomScrollbar.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body class="easyui-layout">
+		<!--头部内容开始-->
+		<div data-options="region:'north',border:false,collapsible:false">
+			<div class="header">
+				<a href="index.html" class="logo">耐奇能源管理系统</a>
+				<div class="nav">
+					<a href="#" alt="one" class="active" title="实时监测"><img src="img/menu1.png" /><span>实时监测</span></a>
+					<a href="#" alt="two" title="用电安全管理"><img src="img/menu2.png" /><span>用电安全管理</span></a>
+					<a href="#" alt="three" title="电能质量管理"><img src="img/menu3.png" /><span>电能质量管理</span></a>
+					<a href="#" alt="four" title="能效管理"><img src="img/menu4.png" /><span>能效管理</span></a>
+					<a href="#" alt="five" title="负荷管理"><img src="img/menu5.png" /><span>负荷管理</span></a>
+					<a href="#" alt="six" title="报表管理"><img src="img/menu6.png" /><span>报表管理</span></a>
+					<a href="#" alt="seven" title="告警查询"><img src="img/menu7.png" /><span>告警查询</span></a>
+					<a href="#" alt="eight" title="设备管理"><img src="img/menu8.png" /><span>设备管理</span></a>
+				</div>
+				<div id="weather">
+					<p class="weather-info">
+						<span>阴转多云</span><br />
+						<span>15~8℃</span><br />
+					</p>
+				</div>
+				
+				<div class="user">
+					<div class="people">
+						<img src="img/people.png" />
+						<a href="#">管理员</a>
+					</div>
+					<div class="user-handle">
+						<p class="login-out">
+							<a href="#">安全退出</a>
+						</p>
+						<p class="user-tips">
+							<a href="#"><b>1</b></a>
+							<a href="#"><b>1</b></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--头部内容结束-->
+		<!--侧边二级菜单开始-->
+		<div data-options="region:'west',collapsible:false" id="west-menu">
+			<div class="easyui-accordion" data-options="border:false,fit:true" id="wnav">
+				<div data-options="title:'能耗可视化管理'">
+					<ul class="menu-list">
+						<li>
+							<img src="img/57.png" />
+							<img src="img/57g.png" style="display: none;" />
+							<a href="#"><span>用能分布可视化</span></a>
+						</li>
+						<li>
+							<img src="img/56.png" />
+							<img src="img/56g.png" style="display: none;" />
+							<a href="#"><span>变配电监测</span></a>
+						</li>
+						<li>
+							<img src="img/58.png" />
+							<img src="img/58g.png" style="display: none;" />
+							<a href="#"><span>重点回路监测</span></a>
+						</li>
+						<li>
+							<img src="img/59.png" />
+							<img src="img/59g.png" style="display: none;" />
+							<a href="#"><span>电房监测</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--侧边二级菜单结束-->
+		<div id="mainPanle" data-options="region:'center',border:false,fit:true">
+			<div id="tt" class="easyui-tabs" data-options="fit:true,border:false">
+				<div title="首页">
+					<img src="img/main.PNG" id="main-pic" />
+				</div>
+			</div>
+		</div>
+		<div class="menuE">
+			<img src="img/MenuCloseB1.png" />
+		</div>
+	</body>
+
+</html>

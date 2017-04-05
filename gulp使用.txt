@@ -1,0 +1,4 @@
+1.首先要安装nodejs
+2.cmd进入目录
+3.命令npm install(npm可能会发生错误，装cnpm)
+4.命令gulp serve

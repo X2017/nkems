@@ -1,0 +1,239 @@
+@import "reset";
+.header {
+    width: 100%;
+    height: 88px;
+    padding: 0 10px;
+    background-color: #1daea6;
+    position: relative;
+    box-sizing: border-box;
+    >a{
+        line-height: 80px;
+        font-size: 40px;
+        color: #fff;
+    }
+}
+//logo
+.logo {
+    float: left;
+    margin-top: (88px-80)/2;
+    margin-left: 10px;
+    img{
+        height: 80px;
+    }
+}
+//中间导航栏
+.nav {
+    width: 720px;
+    height: 88px;
+    position: absolute;
+    left: 50%;
+    margin-left: -360px;
+    img {
+        margin: 0 auto;
+        width: 50px;
+    }
+    a {
+        width: 82px;
+        height: 74px;
+        border-radius: 10px;
+        float: left;
+        margin: 7px 6px 0 0;
+        font: 13px/20px "microsoft yahei";
+        color: #fff;
+        background-color: #1daea6;
+        text-align: center;
+        &:hover {
+            box-shadow: 0 0 5px #20f05b inset;
+        }
+    }
+    .active {
+        background-color: #2acbc7;
+        &:hover {
+            box-shadow: none;
+        }
+    }
+}
+#west-menu .accordion{
+    background: #28343D;
+}
+//天气
+#weather{
+    width: 100px;
+    height: 88px;
+    position: absolute;
+    right: 180px;
+    color: #fff;
+    .weather-info{
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+        padding-top: 26px;
+    }
+}
+//右侧用户信息
+.user {
+    float: right;
+    margin-top: 5px;
+    .people {
+        float: left;
+        width: 80px;
+        height: 70px;
+        text-align: center;
+        a {
+            font: 13px/20px "microsoft yahei";
+            color: #fff;
+        }
+        img {
+            margin: 0 auto;
+            width: 50px;
+        }
+    }
+    .user-handle {
+        float: left;
+        width: 100px;
+        height: 70px;
+    }
+}
+.login-out {
+    height: 20px;
+    text-align: right;
+    a {
+        font: 13px/20px "microsoft yahei";
+        color: #fff;
+        &:hover {
+            text-shadow: 0 0 2px #fff;
+        }
+    }
+}
+.user-tips {
+    a {
+        float: left;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        &:nth-child(1) {
+            background: url("../img/MessageButtonImg.png") no-repeat center bottom;
+        }
+        &:nth-child(2) {
+            background: url("../img/AlarmButtonImg.png") no-repeat center bottom;
+        }
+    }
+    b {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -2px;
+        top: 8px;
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 10px;
+        background-color: #f00;
+    }
+}
+.panel-body.panel-body-noheader.panel-body-noborder {
+    overflow: hidden;
+}
+//侧边二级菜单
+#west-menu {
+    width: 160px;
+    background-color: #28343d;
+    border-color: #656565;
+}
+#wnav {
+    > .panel {
+        background-color: #000;
+    }
+    .panel-header {
+        height: 32px;
+        border-color: #656565;
+    }
+    .panel-title {
+        height: 32px;
+        line-height: 32px;
+        font: 500 13px/32px "microsoft yahei";
+        color: #fff;
+    }
+    .panel-body {
+        border: 0;
+        background-color: #28343D;
+        border-color: #1C252B;
+    }
+    .accordion-header {
+        background-color: #0D1C28;
+    }
+}
+.menu-list {
+    margin-top: 5px;
+    overflow: hidden;
+    .active{
+        background-color: #555;
+        a{
+            color: #1daea6;
+        }
+    }
+    li {
+        height: 56px;
+        border-top: 1px solid #1C252B;
+        border-bottom: 1px solid #1C252B;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+            background-color: #555;
+        }
+        img{
+            margin: 0 auto;
+            padding-top: 2px;
+        }
+    }
+    a {
+        display: block;
+        line-height: (58px-32);
+        font-size: 13px;
+        color: #fff;
+    }
+}
+//中间面板
+#mainPanle {
+    background: #1FB5AD;
+    overflow-y: hidden;
+}
+#tt {
+    .panel-body-noborder {
+        margin-left: 5px;
+        position: relative;
+    }
+    .tabs-first{
+        .tabs-inner{
+            padding: 0 30px;
+        }
+    }
+    .tabs-inner {
+        cursor: pointer;
+        span:first-child {
+            font: normal 13px/13px "microsoft yahei";
+        }
+    }
+}
+.menuE {
+    position: absolute;
+    top: 50%;
+    left: 155px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.tabs {
+    background-color: #1FB5AD;
+}
+#tt {
+    .tabs-header {
+        background-color: #1FB5AD;
+        padding-top: 0;
+    }
+}
+#main-pic{
+    margin-top: 30px;
+}
+#wnav .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCustomScrollbar>.mCustomScrollBox~.mCSB_scrollTools.mCSB_scrollTools_onDrag .mCSB_dragger_bar{
+    background-color: #1FB5AD;
+}

@@ -1,0 +1,191 @@
+@import "reset";
+.pandect {
+    width: 10%;
+    background-color: #657A8E;
+    position: relative;
+}
+#tt {
+    padding-bottom: 30px;
+    .tree-title {
+        color: #fff;
+    }
+    .tree-node-selected {
+        background-color: #2acac5;
+        &:hover {
+            background-color: #2acac5;
+        }
+    }
+    .tree-node-hover {
+        background-color: #4d6073;
+    }
+}
+.layout-panel-center .panel-body {
+    overflow: hidden;
+}
+.panel-cont {
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff;
+    border-bottom: 1px solid #95B8E7;
+}
+%search {
+    height: 22px;
+    padding: 0 10px;
+    margin-left: 5px;
+    line-height: 20px;
+    border-color: #23bab5;
+    font-size: 13px;
+    span {
+        line-height: 22px;
+    }
+}
+#search {
+    @extend %search;
+    margin: 4px 5px;
+}
+#download {
+    @extend %search;
+    color: #0000FF;
+}
+#search-plan {
+    @extend %search;
+}
+.use-plan {
+    height: 24px;
+    border: 1px solid #23bab5;
+}
+.power-factor{
+    height: 20px;
+    border: 1px solid #23bab5;
+    border-radius: 3px;
+}
+#benchmark {
+    @extend .use-plan;
+}
+#proportion {
+    text-align: center;
+    border-bottom:medium solid #23bab5;
+    border-radius: 3px;
+}
+.select {
+    float: left;
+    height: 20px;
+    padding: 4px 0;
+    .easyui-linkbutton {
+        @extend %search;
+    }
+    .l-btn-selected,
+    .l-btn-selected:hover {
+        border-color: #23bab5;
+        background-color: #75ddda;
+    }
+}
+.singleDate {
+    float: left;
+    padding: 3px 0;
+    margin-left: 5px;
+    .textbox {
+        border-color: #23bab5;
+    }
+    .easyui-datebox {
+        height: 20px;
+    }
+}
+.doubleDate {
+    @extend .singleDate;
+}
+.checkboxs {
+    float: left;
+    line-height: 30px;
+    margin-left: 5px;
+}
+#combobox {
+    width: 100px;
+    +.textbox {
+        margin-left: 5px;
+        border-color: #23bab5;
+    }
+}
+.data-img {
+    height: 96%;
+    overflow: auto;
+    margin-top: 30px;
+    img {
+        width: 100%;
+    }
+}
+.img-box {
+    overflow: auto;
+    img{
+        width: 100%;
+    }
+}
+.south {
+    height: 88px;
+}
+.search-cont {
+    width: 96%;
+    margin-left: 2%;
+    height: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 10px;
+    input {
+        width: 100%;
+        height: 20px;
+        padding-left: 25px;
+        border-radius: 3px;
+        box-sizing: border-box;
+        background-color: #303c48;
+        border: 0;
+        outline: none;
+    }
+    a {
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url("../css/icons/search1.png") no-repeat center center;
+    }
+}
+//滚动条样式
+._mCS_1 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCustomScrollbar > .mCustomScrollBox~.mCSB_scrollTools.mCSB_scrollTools_onDrag .mCSB_dragger_bar {
+    background-color: #1FB5AD;
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #1FB5AD;
+}
+.mCSB_inside > .mCSB_container {
+    margin-right: 0;
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-3d.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #304050;
+}
+#mCSB_2_container{
+    padding-right: 10px;
+}
+//复选框样式
+.check-input {
+    display: none;
+}
+.check-input+span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../css/images/tree_icons1.png") no-repeat -209px -21px;
+}
+.check-input:checked+span {
+    background: url("../css/images/tree_icons1.png") no-repeat -225px -21px;
+}
